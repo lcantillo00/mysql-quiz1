@@ -1,0 +1,36 @@
+What is the SQL verb to get information out of a database?
+ Give an example of how you would read all the data in a table named 'transactions'
+
+ answer: SELECT * FROM transactions;
+
+ What is the SQL verb to change a value in a row?
+
+ answer : UPDATE <Table number> SET <column> ="value you want to change" WHERE <column we filter>= some values;
+
+
+ Imagine there is a 'world' table with the following columns: country, continent, population, area, gdp, language.
+ How would you change the 'language' of a country named countryx from Japanese to English?
+
+ answer:UPDATE world Set language ="English" WHERE country= countryx;
+
+
+ What is the SQL verb to add rows to a table?
+
+ answer:  insert into  table name (columna) values (valor de la columna);
+
+ Consider the same table from question 3. Write a SQL statement which adds a country named 'Trumplandia' to this table. The country has the following data:
+ continent = America
+ population = 1
+ area = 1000000
+ gdp = 9999999999
+ Language = tremendous
+
+ answer: INSERT INTO  world (country,continent, population, area, gdp, language) values ('trumpolandia',‘america’, 1, 10000, 999999, ‘tremendous’);
+
+ Which is the SQL clause to filter results before the query is run?
+ answer :where
+
+ Consider the same table from question 3. Write a query which shows only the names of all countries with population lower than 10 million.
+
+ answer: select country from word where population< 1000000;
+ 
